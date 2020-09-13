@@ -1,6 +1,5 @@
 this is itmayiedu<br>
 ${name}
-
 <#if sex=1>
     男
     <#elseif sex=0>

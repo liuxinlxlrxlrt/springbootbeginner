@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: lx@lx19870613
+    driver: com.mysql.jdbc.Driver
+###springboot2.0 多数据源读取名称存在bug，url为jdbc-url
