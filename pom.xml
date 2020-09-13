@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.itmayiedu</groupId>
+    <artifactId>springboot-helloword</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <!--第一步：引入SpringBoor父类依赖-->
+    <!--引入父类依赖包，会把一些常用的依赖包的依赖添加到项目中-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.3.3.RELEASE</version>
+    </parent>
+
+    <dependencies>
+        <!--第二步：引入springboot-web组件 整合springMVC+spring+mybatis(SSM)-->
+        <!--springboot封装的时springMVC，默认是springMVC，默认把spring\springMVC依赖添加到项目中-->
+        <!--解决冲突管理：不写版本，继承使用父类的版本-->
+        <!--springboot封装jar依赖原理：maven的继承依赖管理所有的jar全部都在parent依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--引入freemarker模板引擎依赖包-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
