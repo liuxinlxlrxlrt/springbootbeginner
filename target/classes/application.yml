@@ -5,3 +5,21 @@ spring:
     password: lx@lx19870613
     driver: com.mysql.jdbc.Driver
 ###springboot2.0 多数据源读取名称存在bug，url为jdbc-url
+  http:
+    endcoding:
+      force: true
+      ##模板引擎编码为UTF-8
+      charset: UTF-8
+  freemarker:
+    allow-request-override: false
+    cache: false
+    check-template-location: true
+    charset: utf-8
+    content-type: text/html; charset=utf-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    ##模板文件结尾.ftl
+    suffix: .ftl
+    ##模板文件目录
+    template-loader-path: classpath:/templates
